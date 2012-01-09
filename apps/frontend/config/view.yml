@@ -1,0 +1,29 @@
+default:
+  http_metas:
+    content-type: text/html
+    Expires: Mon, 26 Jul 1997 05:00:00 GMT
+
+  metas:
+    title:        DATA Solutions
+    description:  Data solutions es una empresa dedicado al desarrollo de aplicaciones WEB 2.0.
+    keywords:     DATA Solutions, data, solutions, solucion, datos, soluciones, web, aplicacion, aplicaciones, peru, symfony, doctrine, oracle,php
+    #language:     es
+    robots:       index, follow
+
+  stylesheets:
+    - frontend/reset.css:               { media: all }
+    - frontend/style.css:               { media: all }
+    
+  javascripts:
+    - jquery/jquery-1.4.2.min.js
+    #- jquery/jquery-ui-1.8.min.js
+    - frontend/cufon-yui.js
+    - frontend/Humanst521_BT_400.font.js
+    - frontend/Humanst521_Lt_BT_400.font.js
+    - frontend/roundabout.js
+    - frontend/roundabout_shapes.js
+    - frontend/gallery_init.js
+    - frontend/cufon-replace.js
+    
+  has_layout:     true
+  layout:         layout

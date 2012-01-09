@@ -1,0 +1,8 @@
+all:
+  recaptcha_public_key:  6LezjscSAAAAAO9CI4xGJvyka3iEo8P66e1DXcsB
+  recaptcha_private_key: 6LezjscSAAAAAHBZRD4cgEfvgCPq03bAkj8aoVdl 
+  contact_form:
+    email:        dtataje@datasolutions.pe
+    error:        Hay un error. No puede ser enviado!
+    notice:       Tu mensaje ha sido enviado con &eacute;xito.
+    captcha:      Su c&oacute;digo secreto es incorrecto.

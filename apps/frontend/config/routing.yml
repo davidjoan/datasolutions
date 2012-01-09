@@ -1,0 +1,31 @@
+homepage:
+  url:             /
+  param:           { module: Home, action: index}
+
+nosotros:
+  url:             /nosotros
+  param:           { module: Home, action: nosotros}
+
+servicios:
+  url:             /servicios
+  param:           { module: Home, action: servicios}
+
+proyectos:
+  url:             /proyectos/:slug
+  param:           { module: Home, action: proyectos, slug: ''}
+  requirements:    { slug: \w+}
+
+contactenos:
+  url:             /contactenos
+  param:           { module: Home, action: contactenos}
+
+sitemap:
+  url:             /sitemap
+  param:           { module: Home, action: sitemap}
+
+image:
+  url:             /image
+  param:           { module: Home, action: image}
+  
+default:
+  url:             /:module/:action/*

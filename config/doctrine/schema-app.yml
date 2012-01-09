@@ -1,0 +1,21 @@
+Application:
+  tableName:                           t_application
+  actAs:
+    Timestampable:
+    SluggableExt:                      { fields: [ name ] }
+    Thumbnailable:                     { fields: [ image ] }
+  columns:
+    id:                                { type: integer  , length: 20 , primary: true    , autoincrement: true                                                  }
+    rank:                              { type: integer  , length: 20                                                                                           }
+    name:                              { type: string   , length: 200                   , notnull: true                                                        } 
+    description:                       { type: string   , length: 5000                  , notnull: true                                                        }
+    image:                             { type: string   , length: 200                   , notnull: false                                                       }
+    url:                               { type: string   , length: 255                                                                                          }
+    active:                            { type: string   , length: 1  , fixed: true      , notnull: true , default: 0                                           }
+  indexes:
+    i_name:                            { fields: [ name ]                                                                                                      }
+    i_active:                          { fields: [ active ]                                                                                                    }
+    i_url:                             { fields: [ url ]                                                                                                       }
+  options:
+    symfony:                           { filter: false, form: true }
+    boolean_columns:                   [ active ]
