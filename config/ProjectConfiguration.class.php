@@ -1,7 +1,7 @@
 <?php
 
 //require_once '/home/datasolu/symfony/lib/autoload/sfCoreAutoload.class.php';
-require_once(dirname(__FILE__).'/../lib/vendor/symfony/autoload/sfCoreAutoload.class.php');
+require_once(dirname(__FILE__).'/../lib/vendor/symfony/lib/autoload/sfCoreAutoload.class.php');
 sfCoreAutoload::register();
 require_once(dirname(__FILE__).'/../plugins/symfextPlugin/config/sfProjectConfigurationExt.class.php');
 
