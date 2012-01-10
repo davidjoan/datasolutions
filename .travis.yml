@@ -14,6 +14,8 @@ env:
 
 # execute any number of scripts before the test run, custom env's are available as variables
 before_script:
+  - git submodule init
+  - git submodule update
   - sh -c "php symfony doctrine:build --all --and-load --no-confirmation"
 
 
