@@ -22,27 +22,25 @@ class Doctrine_Template_Thumbnailable extends Doctrine_Template
    * @fixme:now
    * @todo: now
    */
-  public function createThumbnail($field, $width = 200, $height = null)
+  public function createThumbnail($field,$mime = null, $width = 180, $height = null)
   {
-    $file_directory = '/home/datasolu/public_html/uploads/application_images'.$this->getInvoker()->getFileDirectory($field);
-   // Deb::print_r($file_directory);
-  
-    //if (is_file($file_directory))
-    //{
-        
-     //   Deb::print_r($file_directory);
-      
-      $thumbnail      = new sfImageExt($file_directory,'image/png');
+    $directory = $this->getInvoker()->getFieldDirectory($field);
+    $image     = $directory.'/'.$this->getInvoker()->$field;
 
-      $height         = null === $height ? $width : $height;
-      //Deb::print_r($file_directory);    
-      $thumbnail_name = $this->processThumbnailFileName($file_directory, $width);
-      
-      $thumbnail->thumbnail($width, $height, 'scale');
-      
-      $thumbnail->setQuality(80);
-      $thumbnail->saveAs($thumbnail_name);
-    //}
+    if (is_file($image))
+    {
+      $thumbnail = new sfImageExt($image, $mime);
+
+      $directory = $directory.'/thumb/'.$this->getInvoker()->$field;
+      if (Toolkit::createDirectory($directory))
+      {
+        $height         = null === $height ? $width : $height;
+        $thumbnail_name = sprintf('%s/%spx-%s', $directory, $width, $this->getFileName($field));
+        $thumbnail->thumbnail($width, $height, 'scale');
+        $thumbnail->setQuality(80);
+        $thumbnail->saveAs($thumbnail_name);
+      }
+    }
   }
   
   /**
