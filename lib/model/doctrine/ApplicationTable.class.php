@@ -41,7 +41,13 @@ class ApplicationTable extends DoctrineTable
   	           
     $dato = $q->execute()->getFirst()->toArray();
     return $dato['MAX']+1;
-  	 
+  }
+  
+  public function findOneBySlug($slug)
+  {
+    $q = $this->createQuery('a')
+      ->addWhere('a.id = ?', $slug);
+  return $q->fetchOne();
   }
 
   

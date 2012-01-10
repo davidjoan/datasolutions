@@ -1,14 +1,10 @@
-Application:
-  tableName:                           t_application
+Team:
+  tableName:                           t_team
   actAs:
     Timestampable:
-    #SluggableExt:                      { fields: [ name ] }
+    SluggableExt:                      { fields: [ name ] }
     Thumbnailable:                     { fields: [ image ] }
-    #I18n:                              { fields: [ name, description ] }
-    I18n:
-      fields: [name, description ]
-      actAs:
-        SluggableExt: { fields: [name], uniqueBy: [lang, name] }    
+    I18n:                              { fields: [ description ] }    
   columns:
     id:                                { type: integer  , length: 20 , primary: true    , autoincrement: true                                                  }
     rank:                              { type: integer  , length: 20                                                                                           }

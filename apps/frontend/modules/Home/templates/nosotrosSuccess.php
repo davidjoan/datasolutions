@@ -1,13 +1,13 @@
 <aside>
-  <h2>Noso<span>tros</span></h2>
+  <h2><?php echo __('Noso<span>tros</span>');?></h2>
   <div class="img-box" style="text-align: justify">
-    DATA solutions no sólo es una de las mejores empresa de desarrollo web a nivel mundial, te ofrecemos soluciones únicas, creativas y modernas para todo lo que quieres expresar.
-    Nuestras diversas áreas y el staff de profesionales altamente capacitados y experimentados en la creación de sistemas web, imagen corporativa, diseño de base de datos, posicionamiento WEB, que trabajan en equipo para satisfacer los requerimientos de tu empresa, con la estrategia creativa que necesitas para tus productos, servicios o contenidos.
+    <?php echo __('DATA solutions no sólo es una de las mejores empresa de desarrollo web a nivel mundial, te ofrecemos soluciones únicas, creativas y modernas para todo lo que quieres expresar.
+    Nuestras diversas áreas y el staff de profesionales altamente capacitados y experimentados en la creación de sistemas web, imagen corporativa, diseño de base de datos, posicionamiento WEB, que trabajan en equipo para satisfacer los requerimientos de tu empresa, con la estrategia creativa que necesitas para tus productos, servicios o contenidos.'); ?>
   </div>
 </aside>
 <section id="content">
   <article  style="text-align: justify">
-    <h2>Nuestro <span>Equipo</span></h2>
+    <h2><?php __('Nuestro'); ?> <span><?php echo __('Equipo');?></span></h2>
     <ul class="team-list">
       <li>
         <figure><?php echo image_tag('frontend/david.png');?></figure>

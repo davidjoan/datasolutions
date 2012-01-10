@@ -54,12 +54,6 @@ abstract class BaseNews extends DoctrineRecord
              ));
 
 
-        $this->index('i_title', array(
-             'fields' => 
-             array(
-              0 => 'title',
-             ),
-             ));
         $this->index('i_active', array(
              'fields' => 
              array(
@@ -79,13 +73,26 @@ abstract class BaseNews extends DoctrineRecord
     {
         parent::setUp();
         $timestampable0 = new Doctrine_Template_Timestampable();
-        $sluggableext0 = new Doctrine_Template_SluggableExt(array(
+        $i18n0 = new Doctrine_Template_I18n(array(
+             'fields' => 
+             array(
+              0 => 'title',
+              1 => 'description',
+             ),
+             ));
+        $sluggableext1 = new Doctrine_Template_SluggableExt(array(
              'fields' => 
              array(
               0 => 'title',
              ),
+             'uniqueBy' => 
+             array(
+              0 => 'lang',
+              1 => 'title',
+             ),
              ));
+        $i18n0->addChild($sluggableext1);
         $this->actAs($timestampable0);
-        $this->actAs($sluggableext0);
+        $this->actAs($i18n0);
     }
 }

@@ -1,39 +1,77 @@
 Application:
   Application_1:
     rank: '1'
-    name: CUSA
-    description: '<p>Desde su fundaci&oacute;n en Octubre de 1964 por el Sr. Manuel Ugarte Almonte, CUSA, ha servido de nexo entre importantes proveedores de productos qu&iacute;micos en todo el mundo y las principales empresas industriales del Per&uacute;.<br /><br />Manejando tanto la opci&oacute;n de venta directa como la de distribuci&oacute;n local, CUSA, centra su estrategia en brindar a sus clientes un servicio adecuado tanto a nivel t&eacute;cnico log&iacute;stico como comercial enfocado de la siguiente forma:<br /><br />&nbsp;&nbsp;&nbsp; Permanente capacitaci&oacute;n de nuestro personal, participando en congresos y conferencias tanto a nivel nacional como internacional.<br />&nbsp;&nbsp;&nbsp; Visitas t&eacute;cnicas constantes del proveedor a nuestros clientes.<br />&nbsp;&nbsp;&nbsp; Conferencias para el personal t&eacute;cnico de nuestros clientes.<br /><br />Teniendo en cuenta el avance tecnol&oacute;gico que se da a cada momento, CUSA, mantiene el compromiso de seguir dicho avance para cumplir con los par&aacute;metros de calidad que exigen tanto sus proveedores como sus clientes.</p>'
+    Translation:
+      en:
+        name: CUSA
+        description: '<p>Since its founding in October 1964 by Mr. Manuel Ugarte Almonte, CUSA has been the important link between chemical suppliers around the world and major industrial companies in Peru. <br /> <Br /> Managing the option of selling both direct and local distribution, CUSA, focuses its strategy on providing its customers a good service both technically and commercially focused logistics as follows: <br /> <br /> Permanent training of our staff, participating in meetings and conferences both nationally and internationally. <br /> constant provider technical visits to our customers. <br /> conferences for technical staff of our clients. <br /> <br /> given the technological advances that gives each moment, CUSA, is committed to continue this development to meet the quality parameters that require both your suppliers and your customers.</p>'
+      es:
+        name: CUSA
+        description: '<p>Desde su fundaci&oacute;n en Octubre de 1964 por el Sr. Manuel Ugarte Almonte, CUSA, ha servido de nexo entre importantes proveedores de productos qu&iacute;micos en todo el mundo y las principales empresas industriales del Per&uacute;.<br /><br />Manejando tanto la opci&oacute;n de venta directa como la de distribuci&oacute;n local, CUSA, centra su estrategia en brindar a sus clientes un servicio adecuado tanto a nivel t&eacute;cnico log&iacute;stico como comercial enfocado de la siguiente forma:<br /><br />&nbsp;&nbsp;&nbsp; Permanente capacitaci&oacute;n de nuestro personal, participando en congresos y conferencias tanto a nivel nacional como internacional.<br />&nbsp;&nbsp;&nbsp; Visitas t&eacute;cnicas constantes del proveedor a nuestros clientes.<br />&nbsp;&nbsp;&nbsp; Conferencias para el personal t&eacute;cnico de nuestros clientes.<br /><br />Teniendo en cuenta el avance tecnol&oacute;gico que se da a cada momento, CUSA, mantiene el compromiso de seguir dicho avance para cumplir con los par&aacute;metros de calidad que exigen tanto sus proveedores como sus clientes.</p>'
     image: 8d4daa7c0d8b8bf7518d931b781764385a4c003e.png
     url: 'http://www.cusa-chem.com'
     active: '1'
-    created_at: '2011-08-25 18:00:37'
-    updated_at: '2011-08-25 18:00:37'
-    slug: cusa
   Application_2:
     rank: '3'
-    name: 'Peru TV Online'
-    description: '<p>Television peruana para el mundo entero</p>'
+    Translation:
+      en:    
+        name: 'Peru TV Online'
+        description: '<p>Peruvian television for the whole world.</p>'
+      es:       
+        name: 'Peru TV Online'
+        description: '<p>Television peruana para el mundo entero.</p>'
     image: d629b4088363e4605e9666b0664b7d7cbfd59688.png
     url: 'http://www.perutvonline.com'
     active: '1'
-    created_at: '2011-08-25 18:03:14'
-    updated_at: '2011-08-25 18:05:30'
-    slug: peru_tv_online
   Application_3:
     rank: '2'
-    name: 'Saint Malo Reservation System'
-    description: '<p>Sistema de reserva de habitaciones de la casa de retiro de saint Malo en Colorado.</p>'
+    Translation:
+      en:    
+        name: 'Saint Malo Reservation System'
+        description: '<p>Room Reservation System of the retirement home of Saint Malo in Colorado.</p>'
+      es:    
+        name: 'Sistema de Reservaciones Saint Malo'
+        description: '<p>Sistema de reserva de habitaciones de la casa de retiro de saint Malo en Colorado.</p>'        
     image: a58c227ebee2e29b245320305a09168315d224a9.png
     url: 'http://saintmalo.scholaonline.com'
     active: '1'
-    created_at: '2011-08-25 18:04:54'
-    updated_at: '2011-08-25 18:05:31'
-    slug: saint_malo_reservation_system
+    
 News:
   News_1:
-    title: 'Bienvenidos a DataSolutions'
-    description: '<p>les damos la bienvenida a todos los ustedes, y esperamos satisfacer sus requerimientos, y adsolver todas sus dudas.</p>'
+    Translation:
+      en:  
+        title: 'Welcome to DataSolutions'
+        description: '<p>we welcome all of you, and hope to satisfy their requirements, and adsolver all your questions.</p>'
+      es:  
+        title: 'Bienvenidos a DataSolutions'
+        description: '<p>les damos la bienvenida a todos los ustedes, y esperamos satisfacer sus requerimientos, y adsolver todas sus dudas.</p>'        
+    active: '1' 
+    
+    
+Service:
+  Service_1:
+    rank: '1'
+    Translation:
+      en:
+        name: Symfony
+        description: '<p>symfony english</p>'
+      es:
+        name: Symfony
+        description: '<p>Symfony spanish.</p>'
+    image: 8d4daa7c0d8b8bf7518d931b781764385a4c003e.png
+    url: 'http://symfony.com'
     active: '1'
-    created_at: '2011-08-25 18:08:16'
-    updated_at: '2011-08-25 18:08:16'
-    slug: bienvenidos_a_datasolutions
+
+
+Team:
+  Team_1:
+    Translation:
+      en:
+        description: '<p>Develop, document, Project Manager, Web Designer.</p>'
+      es:
+        description: '<p>Desarrollador, Documentador, Jefe de Proyectos.</p>'
+    rank: '1'
+    name: 'David Joan Tataje Mendoza'        
+    image: 8d4daa7c0d8b8bf7518d931b781764385a4c003e.png
+    url: 'http://blog.datasolutions.pe'
+    active: '1'

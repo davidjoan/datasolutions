@@ -1,10 +1,8 @@
-Application:
-  tableName:                           t_application
+Service:
+  tableName:                           t_service
   actAs:
     Timestampable:
-    #SluggableExt:                      { fields: [ name ] }
     Thumbnailable:                     { fields: [ image ] }
-    #I18n:                              { fields: [ name, description ] }
     I18n:
       fields: [name, description ]
       actAs:

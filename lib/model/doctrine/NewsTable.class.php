@@ -42,4 +42,11 @@ class NewsTable extends DoctrineTable
     
     return $q->execute();
   }
+  
+  public function findOneBySlug($slug)
+  {
+    $q = $this->createQuery('a')
+      ->addWhere('a.id = ?', $slug);
+    return $q->fetchOne();
+  }
 }

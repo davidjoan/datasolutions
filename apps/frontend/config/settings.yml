@@ -33,9 +33,11 @@ all:
     escaping_strategy:      false
     escaping_method:        ESC_SPECIALCHARS
 
-    standard_helpers:       [ Cache, JavascriptBase, Partial, FormExt, Toolkit, UrlExt ]
+    standard_helpers:       [ Cache, JavascriptBase, Partial, FormExt, Toolkit, UrlExt, I18N]
     enabled_modules:        [ Crud, Error, Generic, Pager ]
 
     use_database:           true
     
     default_culture:        es
+    charset:                utf-8
+    i18n:                   true    

@@ -25,13 +25,6 @@ class NewsForm extends BaseNewsForm
     $this->setWidgets(array
     (
       'id'                   => new sfWidgetFormInputHidden(),
-      'title'                => new sfWidgetFormInputText(array(), array('size' => 60)),
-      'description'          => new sfWidgetFormTextareaTinyMCE(array
-                                (
-                                  'width'            => 450,
-                                  'height'           => 250,
-                                  'config'           => 'theme_advanced_disable: "anchor,cleanup,help"',
-                                )),
      'active'               => new sfWidgetFormChoice(array
                                 (
                                   'choices'          => $this->getTable()->getStatuss(),
@@ -44,12 +37,13 @@ class NewsForm extends BaseNewsForm
     $this->types = array
     (
       'id'           => '=',
-      'description'  => '=',
-      'title'          => 'text',
       'active'       => array('combo', array('choices' => array_keys($this->getTable()->getStatuss()))),
       'created_at'   => '-',
-      'updated_at'   => '-',
-      'slug'         => '-',
+      'updated_at'   => '-'
     );
+    
+    $this->embedI18n(array('en', 'es'));
+    $this->widgetSchema->setLabel('en', 'English');
+    $this->widgetSchema->setLabel('es', 'Spanish');
   }
 }

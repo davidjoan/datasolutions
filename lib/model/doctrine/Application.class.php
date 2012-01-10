@@ -24,10 +24,20 @@ class Application extends BaseApplication
     
   }
   
+  public function getName()
+  {
+  	return $this->Translation[sfContext::getInstance()->getUser()->getCulture()]->name;
+  }
+  
   public function setNewRank()
   {
   	$rank = $this->getTable()->getNewRank();
   	$this->setRank($rank);
+  }
+  
+  public function getSlug()
+  {
+  	return $this->getId();
   }
   
     

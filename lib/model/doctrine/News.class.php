@@ -12,6 +12,12 @@
  */
 class News extends BaseNews
 {
+	
+  public function getSlug()
+  {
+    return $this->getId();
+  }	
+  
   public function getFormattedDatetime($format = 'D')
   {
     return $this->getTable()->getDateTimeFormatter()->format($this->getCreatedAt(), $format);

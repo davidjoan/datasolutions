@@ -123,5 +123,17 @@ class HomeActions extends ActionsProject
     imagepng($image);
     imagedestroy($image);
     return sfView::NONE;
-   }  
+   }
+   
+   public function executeChangeLanguage(sfWebRequest $request)
+   {
+   	$this->form = new sfFormLanguage($this->getUser(), array('languages' => array('en', 'es')));
+   	if ($request->isMethod('post'))
+   	{
+      $this->form->process($request);
+   	  return $this->redirect('@homepage');
+   	  //return $this->redirect($this->getEntranceRoute());
+   	}
+   	return $this->redirect('@homepage');
+   }
 }

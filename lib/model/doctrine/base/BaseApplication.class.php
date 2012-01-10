@@ -76,12 +76,6 @@ abstract class BaseApplication extends DoctrineRecord
              ));
 
 
-        $this->index('i_name', array(
-             'fields' => 
-             array(
-              0 => 'name',
-             ),
-             ));
         $this->index('i_active', array(
              'fields' => 
              array(
@@ -107,20 +101,33 @@ abstract class BaseApplication extends DoctrineRecord
     {
         parent::setUp();
         $timestampable0 = new Doctrine_Template_Timestampable();
-        $sluggableext0 = new Doctrine_Template_SluggableExt(array(
-             'fields' => 
-             array(
-              0 => 'name',
-             ),
-             ));
         $thumbnailable0 = new Doctrine_Template_Thumbnailable(array(
              'fields' => 
              array(
               0 => 'image',
              ),
              ));
+        $i18n0 = new Doctrine_Template_I18n(array(
+             'fields' => 
+             array(
+              0 => 'name',
+              1 => 'description',
+             ),
+             ));
+        $sluggableext1 = new Doctrine_Template_SluggableExt(array(
+             'fields' => 
+             array(
+              0 => 'name',
+             ),
+             'uniqueBy' => 
+             array(
+              0 => 'lang',
+              1 => 'name',
+             ),
+             ));
+        $i18n0->addChild($sluggableext1);
         $this->actAs($timestampable0);
-        $this->actAs($sluggableext0);
         $this->actAs($thumbnailable0);
+        $this->actAs($i18n0);
     }
 }

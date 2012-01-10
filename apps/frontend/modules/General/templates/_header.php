@@ -2,12 +2,12 @@
   <h1><a href="/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h1>
   <nav>
     <ul>
-      <?php include_partial('General/tab', array('title' => 'Inicio'   , 'uri' => '@homepage')) ?>
-      <?php include_partial('General/tab', array('title' => 'Nosotros' , 'uri' => '@nosotros')) ?>
-      <?php include_partial('General/tab', array('title' => 'Servicios', 'uri' => '@servicios')) ?>
-      <?php include_partial('General/tab', array('title' => 'Proyectos', 'uri' => '@proyectos')) ?>
-      <?php include_partial('General/tab', array('title' => 'Contacto' , 'uri' => '@contactenos')) ?>
-      <?php include_partial('General/tab', array('title' => 'Sitemap'  , 'uri' => '@sitemap')) ?>
+      <?php include_partial('General/tab', array('title' => __('Inicio')   , 'uri' => '@homepage')) ?>
+      <?php include_partial('General/tab', array('title' => __('Nosotros') , 'uri' => '@nosotros')) ?>
+      <?php include_partial('General/tab', array('title' => __('Servicios'), 'uri' => '@servicios')) ?>
+      <?php include_partial('General/tab', array('title' => __('Proyectos'), 'uri' => '@proyectos')) ?>
+      <?php include_partial('General/tab', array('title' => __('Contacto') , 'uri' => '@contactenos')) ?>
+      <?php include_partial('General/tab', array('title' => __('Sitemap')  , 'uri' => '@sitemap')) ?>
     </ul>
   </nav>
 </div>

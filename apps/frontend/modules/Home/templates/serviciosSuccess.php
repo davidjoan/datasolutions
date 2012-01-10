@@ -1,19 +1,19 @@
 <aside>
-  <h2>Sistemas Web <span>2.0</span></h2>
+  <h2><?php echo __('Sistemas Web'); ?> <span>2.0</span></h2>
   <div class="img-box" style="text-align: justify">
-     El desarrollo del internet y la interacción de los usuarios con el entorno web a impulsado a la creación del sistema web 2.0 por su economicidad, por su configurabilidad y además porque el contenido esta disponible desde cualquier máquina local o del mundo.
+     <?php echo __('El desarrollo del internet y la interacción de los usuarios con el entorno web a impulsado a la creación del sistema web 2.0 por su economicidad, por su configurabilidad y además porque el contenido esta disponible desde cualquier máquina local o del mundo.'); ?>
      <figure><?php echo image_tag('frontend/symfony.jpg');?></figure>
-     <BR/>El contenido del sistema web (software web ) puede ser público o sólo restringido a uso de un administrador o administradores, siendo la distribución de los menús y módulos de contenido amigable y fácil de entendimiento.
-     Nuestros sistemas web se pueden programar en lenguages estándares como por ejemplo PHP,PYTHON .ASP y .ASP NET y la información puede ser almacenado localmente o remotamente usando bases de datos, como por ejemplo: MySQL, PostgreSQL, MSSQL Y ORACLE.
+     <br/><?php echo __('El contenido del sistema web (software web ) puede ser público o sólo restringido a uso de un administrador o administradores, siendo la distribución de los menús y módulos de contenido amigable y fácil de entendimiento.
+     Nuestros sistemas web se pueden programar en lenguages estándares como por ejemplo PHP,PYTHON .ASP y .ASP NET y la información puede ser almacenado localmente o remotamente usando bases de datos, como por ejemplo: MySQL, PostgreSQL, MSSQL Y ORACLE.'); ?>
   </div>
 
 </aside>
 
 <section id="content">
   <article style="text-align: justify">
-<h2>Nuestros <span>Servicios</span></h2>
+<h2><?php echo __('Nuestros'); ?> <span><?php echo __('Servicios'); ?></span></h2>
 
-<p>DATA solutions te ofreca una gran variedad de soluciones informaticas. Entre las principales tecnologias que estamos especializados.</p>
+<p><?php echo __('DATA solutions te ofreca una gran variedad de soluciones informaticas. Entre las principales tecnologias que estamos especializados.'); ?></p>
 
 <h2>Symfony</h2>
 

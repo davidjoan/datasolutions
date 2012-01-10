@@ -1,4 +1,4 @@
-<h2>Ultimas <span>Noticias</span></h2>
+<h2><?php echo __('Ultimas'); ?> <span><?php echo __('Noticias'); ?></span></h2>
 <ul class="news">
   <?php foreach($news as $new): ?>
   <li>
