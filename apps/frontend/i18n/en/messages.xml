@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="en" datatype="plaintext" original="messages" date="2012-01-11T20:03:30Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Page Not Found</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>The server returned a 404 response.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Did you type the URL?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>You may have typed the address (URL) incorrectly.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Check it to make sure you've got the exact right spelling, capitalization, etc.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Return</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Login Required</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>This page is not public</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>How to access this page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>You must proceed to the login page and enter your user name and password.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>To Login</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Credentials Required</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>This page is in a restricted area.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>You do not have the proper credentials to access this page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Even though you are already logged in, this page requires special credentials that you currently don't have.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>You must ask a site administrator to grant you some special credentials.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Copyright</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Inicio</source>
+        <target>Welcome</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Nosotros</source>
+        <target>About Us</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Servicios</source>
+        <target>Services</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Proyectos</source>
+        <target>Projects</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Contacto</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Sitemap</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Ultimas</source>
+        <target>Latest</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Noticias</source>
+        <target>News</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Nuestros</source>
+        <target>Our</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Datos</source>
+        <target>Information</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Direcci&amp;oacute;n:</source>
+        <target>Address:</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Codigo Postal:</source>
+        <target>ZIP:</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Pais:</source>
+        <target>Country:</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Ciudad:</source>
+        <target>City:</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>Telefono:</source>
+        <target>Phone:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Email:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Mas Informaci&amp;oacute;n:</source>
+        <target>More Info:</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Mapa:</source>
+        <target>Map</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>Error:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>Alerta!</source>
+        <target>Alert!</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Formulario de</source>
+        <target>Form</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>Nombres:</source>
+        <target>Names:</target>
+      </trans-unit>
+      <trans-unit id="40">
+        <source>E-mail:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>Empresa:</source>
+        <target>Company:</target>
+      </trans-unit>
+      <trans-unit id="42">
+        <source>Asunto:</source>
+        <target>Subject:</target>
+      </trans-unit>
+      <trans-unit id="43">
+        <source>Mensaje:</source>
+        <target>Message:</target>
+      </trans-unit>
+      <trans-unit id="44">
+        <source>Enviar Mensaje</source>
+        <target>Send message</target>
+      </trans-unit>
+      <trans-unit id="45">
+        <source>Bienvenidos a</source>
+        <target>Welcome to</target>
+      </trans-unit>
+      <trans-unit id="46">
+        <source>DATA Solutions</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="47">
+        <source>DATA solutions es una empresa que brinda Soluciones Informáticas usando herramientas especializadas a Empresas, Pymes, Profesionales y Webmasters en general que necesiten desarrollarse en la Internet y necesiten ser competitivos en el mercado.&#13;
+Le ofrecemos incomparables tarifas del mercado, acompañado de nuestra calidad de servicio técnico y asesoria especializada.&#13;
+DATA solutions crece en una industria que está constantemente reinventandose asi misma. Con innovaciones en servicio al cliente y facilidad de uso.&#13;
+Cada dia más negocios confían en DATA solutions con su presencia en la web, profesionalismo, precios insuperables, y servicios innovadores.</source>
+        <target>Data Solutions is a company that provides software solutions using specialized tools for companies, SMEs, professionals and webmasters in general need to be developed on the Internet and need to be competitive in the market.
+We offer unbeatable rates on the market, along with our quality service and expert advice.
+DATA solutions grows in an industry that is constantly reinvented itself. With innovations in customer service and ease of use.
+Every day more businesses rely on Data Solutions with a Web presence, professionalism, unbeatable prices and innovative services.</target>
+      </trans-unit>
+      <trans-unit id="48">
+        <source>DATA solutions provee servicios de Hosting web a bajos costos y características insuperables. El modelo de negocio de DATA solutions enfatiza el servicio a las Pymes, medianas empresas y webmasters en general, permitiendoles hacer comercio electrónico y enfocarse en sus principales aptitudes mientras DATA solutions maneja sus Sitios de internet.</source>
+        <target>Data Solutions provides web hosting services at low costs and unbeatable features. The business model emphasizes service DATA solutions to SMEs, medium sized businesses and general webmasters, allowing them to e-commerce and focus on its core competencies while Data Solutions handles their Internet sites.</target>
+      </trans-unit>
+      <trans-unit id="49">
+        <source>Nuestros servicios ofrecidos incluyen Diseño web profesional usando herramientas de tecnologia web, hosting web profesional, E-Learning, software web a medida y tienda virtual con carrito de compras.</source>
+        <target>Our services offered include professional web design using web technology tools, professional web hosting, E-Learning, software and custom web store with shopping cart.</target>
+      </trans-unit>
+      <trans-unit id="50">
+        <source>Gracias por contactarse con</source>
+        <target>Thank you for contacting</target>
+      </trans-unit>
+      <trans-unit id="51">
+        <source>Dentro de poco nos pondremos en contacto con Ud.</source>
+        <target>Soon we will contact you</target>
+      </trans-unit>
+      <trans-unit id="52">
+        <source>Ir al inicio</source>
+        <target>Back to top</target>
+      </trans-unit>
+      <trans-unit id="53">
+        <source>Noso&lt;span&gt;tros&lt;/span&gt;</source>
+        <target>About &lt;span&gt;Us&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="54">
+        <source>DATA solutions no sólo es una de las mejores empresa de desarrollo web a nivel mundial, te ofrecemos soluciones únicas, creativas y modernas para todo lo que quieres expresar.&#13;
+    Nuestras diversas áreas y el staff de profesionales altamente capacitados y experimentados en la creación de sistemas web, imagen corporativa, diseño de base de datos, posicionamiento WEB, que trabajan en equipo para satisfacer los requerimientos de tu empresa, con la estrategia creativa que necesitas para tus productos, servicios o contenidos.</source>
+        <target>Data Solutions is not only one of the best web development companies worldwide, we offer unique solutions for creative and modern all you want to express.
+     Our diverse areas and the staff of highly trained and experienced in creating web systems, corporate image, database design, search engine optimization, which work together to meet the needs of your company with creative strategy you need to your products, services and content.</target>
+      </trans-unit>
+      <trans-unit id="55">
+        <source>Nuestro</source>
+        <target>Our</target>
+      </trans-unit>
+      <trans-unit id="56">
+        <source>Equipo</source>
+        <target>Team</target>
+      </trans-unit>
+      <trans-unit id="57">
+        <source>Sistemas Web</source>
+        <target>Web Applications</target>
+      </trans-unit>
+      <trans-unit id="58">
+        <source>El desarrollo del internet y la interacción de los usuarios con el entorno web a impulsado a la creación del sistema web 2.0 por su economicidad, por su configurabilidad y además porque el contenido esta disponible desde cualquier máquina local o del mundo.</source>
+        <target>The development of the Internet and how users interact with the web environment prompted the establishment of web 2.0 for its cheapness, for its configurability and also because the content is available from any local machine or the world.</target>
+      </trans-unit>
+      <trans-unit id="59">
+        <source>El contenido del sistema web (software web ) puede ser público o sólo restringido a uso de un administrador o administradores, siendo la distribución de los menús y módulos de contenido amigable y fácil de entendimiento.&#13;
+     Nuestros sistemas web se pueden programar en lenguages estándares como por ejemplo PHP,PYTHON .ASP y .ASP NET y la información puede ser almacenado localmente o remotamente usando bases de datos, como por ejemplo: MySQL, PostgreSQL, MSSQL Y ORACLE.</source>
+        <target>The content of the web (web software) can be public or restricted to use only a manager or managers, the distribution of the menus and content modules and user-friendly understanding.&#13;
+      Our web systems can be programmed in lenguages ​​standards such as PHP, PYTHON. ASP. ASP NET and information can be stored locally or remotely using databases such as MySQL, PostgreSQL, MSSQL and Oracle.</target>
+      </trans-unit>
+      <trans-unit id="60">
+        <source>DATA solutions te ofreca una gran variedad de soluciones informaticas. Entre las principales tecnologias que estamos especializados.</source>
+        <target>Data Solutions provides a wide variety of computer solutions. Among the major technologies that we specialize.</target>
+      </trans-unit>
+      <trans-unit id="61">
+        <source>Mapa del</source>
+        <target>Map of</target>
+      </trans-unit>
+      <trans-unit id="62">
+        <source>Sitio</source>
+        <target>Site</target>
+      </trans-unit>
+      <trans-unit id="63">
+        <source>Enlaces.</source>
+        <target>Links.</target>
+      </trans-unit>
+      <trans-unit id="64">
+        <source>Choose a language:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="65">
+        <source>Ver Mas...</source>
+        <target>View more</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
