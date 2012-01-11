@@ -2,17 +2,15 @@
 
 include(dirname(__FILE__).'/../../bootstrap/functional.php');
 
-$browser = new sfTestFunctional(new sfBrowser());
-
 $browser = new sfTestFunctionalExt(new sfBrowser());
 
-$browser->get('/Team/list')
+$browser->get('/lista/equipo')
         ->checkAction('Team', 'list', 200)
-        ->get('/Team/edit')
+        ->get('/editar/equipo/1')
         ->checkAction('Team', 'edit', 200)
-        ->get('/Team/delete')
+        ->get('/eliminar/equipo/1')
         ->checkAction('Team', 'delete', 200)
-        ->get('/Team/show')
+        ->get('/mostrar/equipo/1')
         ->checkAction('Team', 'show', 200)
-        ->get('/Team/sort')
+        ->get('/ordernar/equipo')
         ->checkAction('Team', 'sort', 200);
