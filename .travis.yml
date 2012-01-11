@@ -22,7 +22,7 @@ before_script:
 # omitting "script:" will default to phpunit
 # use the $DB env variable to determine the phpunit.xml to use
 #script: phpunit --configuration phpunit_$DB.xml --coverage-text
-script: php symfony test:unit User
+script: php symfony test:all
 
 # configure notifications (email, IRC, campfire etc)
 notifications:
