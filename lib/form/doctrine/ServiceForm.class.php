@@ -10,7 +10,67 @@
  */
 class ServiceForm extends BaseServiceForm
 {
+    
+  public function initialize()
+  {
+    $this->labels = array
+    (
+      'image'       => 'Imagen',
+      'url'         => 'Url',
+      'active'      => 'Activo'
+    );
+  }
+  
+  
   public function configure()
   {
+     $this->setWidgets(array
+    (
+      'id'                   => new sfWidgetFormInputHidden(),
+      'image'                => new sfWidgetFormInputFileEditable
+                                (
+                                  array
+                                  (
+                                    'file_src'     => $this->object->getImage(),
+                                    'with_delete'  => false,
+                                    'template'     => sprintf
+                                                      (
+                                                        '<a class="file_link" href="%s/%%file%%" target="BLANK">%%file%%</a><br />%%input%%<br />%%delete%% %%delete_label%%', 
+                                                        sfConfig::get('app_service_images_path')
+                                                      )
+                                  ),
+                                  array('size'         => '60')
+                                ),
+     'url'                  => new sfWidgetFormInputText(array(), array('size' => 30)),         
+     'active'               => new sfWidgetFormChoice(array
+                                (
+                                  'choices'          => $this->getTable()->getStatuss(),
+                                  'expanded'         => true,
+                                  'renderer_options' => array('formatter' => array($this->widgetFormatter, 'radioFormatter'))
+                                ))
+  	));
+     
+       $this->addValidators(array
+    (
+      'image'                 => new sfValidatorFile(array
+                                (
+                                  'required'   => false,
+                                  'path'       => sfConfig::get('app_service_images_dir').'/'
+                                ))
+    ));
+     
+    $this->types = array
+    (
+      'id'           => '=',
+      'image'        => 'file',
+      'url'          => 'url',
+      'active'       => array('combo', array('choices' => array_keys($this->getTable()->getStatuss()))),
+      'created_at'   => '-',
+      'updated_at'   => '-'
+    );
+    
+    $this->embedI18n(array('en', 'es'));
+    $this->widgetSchema->setLabel('en', 'English');
+    $this->widgetSchema->setLabel('es', 'Spanish');
   }
 }

@@ -9,24 +9,27 @@
  * @property integer $rank
  * @property string $name
  * @property string $description
+ * @property string $meta_description
  * @property string $image
  * @property string $url
  * @property string $active
  * 
- * @method integer     getId()          Returns the current record's "id" value
- * @method integer     getRank()        Returns the current record's "rank" value
- * @method string      getName()        Returns the current record's "name" value
- * @method string      getDescription() Returns the current record's "description" value
- * @method string      getImage()       Returns the current record's "image" value
- * @method string      getUrl()         Returns the current record's "url" value
- * @method string      getActive()      Returns the current record's "active" value
- * @method Application setId()          Sets the current record's "id" value
- * @method Application setRank()        Sets the current record's "rank" value
- * @method Application setName()        Sets the current record's "name" value
- * @method Application setDescription() Sets the current record's "description" value
- * @method Application setImage()       Sets the current record's "image" value
- * @method Application setUrl()         Sets the current record's "url" value
- * @method Application setActive()      Sets the current record's "active" value
+ * @method integer     getId()               Returns the current record's "id" value
+ * @method integer     getRank()             Returns the current record's "rank" value
+ * @method string      getName()             Returns the current record's "name" value
+ * @method string      getDescription()      Returns the current record's "description" value
+ * @method string      getMetaDescription()  Returns the current record's "meta_description" value
+ * @method string      getImage()            Returns the current record's "image" value
+ * @method string      getUrl()              Returns the current record's "url" value
+ * @method string      getActive()           Returns the current record's "active" value
+ * @method Application setId()               Sets the current record's "id" value
+ * @method Application setRank()             Sets the current record's "rank" value
+ * @method Application setName()             Sets the current record's "name" value
+ * @method Application setDescription()      Sets the current record's "description" value
+ * @method Application setMetaDescription()  Sets the current record's "meta_description" value
+ * @method Application setImage()            Sets the current record's "image" value
+ * @method Application setUrl()              Sets the current record's "url" value
+ * @method Application setActive()           Sets the current record's "active" value
  * 
  * @package    datasol
  * @subpackage model
@@ -57,6 +60,11 @@ abstract class BaseApplication extends DoctrineRecord
              'type' => 'string',
              'length' => 5000,
              'notnull' => true,
+             ));
+        $this->hasColumn('meta_description', 'string', 500, array(
+             'type' => 'string',
+             'length' => 500,
+             'notnull' => false,
              ));
         $this->hasColumn('image', 'string', 200, array(
              'type' => 'string',
@@ -112,6 +120,7 @@ abstract class BaseApplication extends DoctrineRecord
              array(
               0 => 'name',
               1 => 'description',
+              2 => 'meta_description',
              ),
              ));
         $sluggableext1 = new Doctrine_Template_SluggableExt(array(

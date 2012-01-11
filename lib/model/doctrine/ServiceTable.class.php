@@ -45,9 +45,7 @@ class ServiceTable extends DoctrineTable
     public function findOneBySlug($slug)
     {
     	$q = $this->createQuery('a')
-    	->leftJoin('a.Translation t')
-    	->andWhere('t.lang = ?', 'es')
-    	->andWhere('t.slug = ?', $slug);
+    	->addWhere('a.id = ?', $slug);
     	return $q->fetchOne();
     }
     

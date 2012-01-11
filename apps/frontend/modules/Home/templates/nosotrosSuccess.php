@@ -7,16 +7,21 @@
 </aside>
 <section id="content">
   <article  style="text-align: justify">
-    <h2><?php __('Nuestro'); ?> <span><?php echo __('Equipo');?></span></h2>
+    <h2><?php echo __('Nuestro'); ?> <span><?php echo __('Equipo');?></span></h2>
     <ul class="team-list">
+    <?php foreach($team as $member): ?>
       <li>
-        <figure><?php echo image_tag('frontend/david.png');?></figure>
-        <h3>David Joan Tataje Mendoza</h3>
-        Desarrollador, Documentador, Jefe de Proyectos, Diseñador Web.
-        David es un desarrollador de software que actualmente vive en Lima, Perú. 
-        Fundador de la empresa DATA solutions, ha estado involucrado de una manera u otra desde entonces.
-        David actualmente trabaja a tiempo completo como desarrollador de software, utilizando como plataforma symfony, doctrine y oracle.
+        <?php if($member->getImage() <> ''): ?>
+          <figure><?php echo image_tag(Doctrine::getTable('Team')->getImagePath().'/'.$member->getImage() , array('border' => 0,'alt' => $member->getName())); ?></figure>
+        <?php endif; ?>
+        <?php if($member->getUrl() <> ''): ?>
+          <h3><?php echo link_to($member->getName(), $member->getUrl(), array('target' => 'BLANK')); ?></h3>
+        <?php else:?>
+          <h3><?php echo $member->getName(); ?></h3>
+        <?php endif; ?>
+        <?php echo $member->getDescription(); ?>
       </li>
+      <?php endforeach; ?>
     </ul>
   </article>
 </section>

@@ -10,7 +10,32 @@
  */
 class TeamTranslationForm extends BaseTeamTranslationForm
 {
+  public function initialize()
+  {
+    $this->labels = array
+    (
+      'description' => 'Descripci&oacute;n'
+    );
+  }
+  
   public function configure()
   {
+     $this->setWidgets(array
+    (
+      'id'                   => new sfWidgetFormInputHidden(),
+      'description'          => new sfWidgetFormTextareaTinyMCE(array
+                                (
+                                  'width'            => 450,
+                                  'height'           => 250,
+                                  'config'           => 'theme_advanced_disable: "anchor,cleanup,help"',
+                                ))
+  	));
+     
+    $this->types = array
+    (
+      'id'           => '=',
+      'description'  => '=',
+      'slug'         => '-',
+    );
   }
 }

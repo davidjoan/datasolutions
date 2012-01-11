@@ -24,10 +24,25 @@ class Application extends BaseApplication
     
   }
   
+  public function generateImageFilename($file)
+  {
+  	return Stringkit::fixFilename($file->getOriginalName()).'_'.rand(11111, 99999).$file->getOriginalExtension();
+  }  
+  
   public function getName()
   {
   	return $this->Translation[sfContext::getInstance()->getUser()->getCulture()]->name;
   }
+  
+  public function getDescription()
+  {
+  	return $this->Translation[sfContext::getInstance()->getUser()->getCulture()]->description;
+  }
+
+  public function getMetaDescription()
+  {
+  	return $this->Translation[sfContext::getInstance()->getUser()->getCulture()]->meta_description;
+  }  
   
   public function setNewRank()
   {
@@ -37,7 +52,7 @@ class Application extends BaseApplication
   
   public function getSlug()
   {
-  	return $this->getId();
+  	return $this->_get('id');
   }
   
     

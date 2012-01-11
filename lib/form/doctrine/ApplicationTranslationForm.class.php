@@ -10,12 +10,13 @@
  */
 class ApplicationTranslationForm extends BaseApplicationTranslationForm
 {
-public function initialize()
+  public function initialize()
   {
     $this->labels = array
     (
       'name'        => 'Nombre',
-      'description' => 'Descripci&oacute;n'
+      'description' => 'Descripci&oacute;n',
+      'meta_description' => 'Meta Descripci&oacute;n',
     );
   }
   
@@ -30,13 +31,15 @@ public function initialize()
                                   'width'            => 450,
                                   'height'           => 250,
                                   'config'           => 'theme_advanced_disable: "anchor,cleanup,help"',
-                                ))
+                                )),
+      'meta_description'    => new sfWidgetFormTextarea()
   	));
      
     $this->types = array
     (
       'id'           => '=',
       'description'  => '=',
+      'meta_description' => 'text',
       'name'         => 'text',
       'created_at'   => '-',
       'updated_at'   => '-',

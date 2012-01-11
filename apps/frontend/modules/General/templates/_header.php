@@ -11,3 +11,8 @@
     </ul>
   </nav>
 </div>
+<div id="view-more">
+  <a href="#inside" class="scrollTo"><?php echo __('Ver Mas...');?></a>
+</div>
+<div id="arrow"></div>
+

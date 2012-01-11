@@ -30,6 +30,8 @@ class ProjectConfiguration extends sfProjectConfigurationExt
     sfConfig::set('site_name', 'Data Solutions');
     
     $this->setConfigDirPathVariable('application_images' , sfConfig::get('sf_upload_dir').DIRECTORY_SEPARATOR.'application_images' );
+    $this->setConfigDirPathVariable('team_images'        , sfConfig::get('sf_upload_dir').DIRECTORY_SEPARATOR.'team_images' );
+    $this->setConfigDirPathVariable('service_images'     , sfConfig::get('sf_upload_dir').DIRECTORY_SEPARATOR.'service_images' );
     
   }
 }

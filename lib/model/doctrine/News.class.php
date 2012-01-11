@@ -15,7 +15,7 @@ class News extends BaseNews
 	
   public function getSlug()
   {
-    return $this->getId();
+    return $this->_get('id');
   }	
   
   public function getFormattedDatetime($format = 'D')

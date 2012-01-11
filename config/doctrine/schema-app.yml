@@ -2,18 +2,17 @@ Application:
   tableName:                           t_application
   actAs:
     Timestampable:
-    #SluggableExt:                      { fields: [ name ] }
     Thumbnailable:                     { fields: [ image ] }
-    #I18n:                              { fields: [ name, description ] }
     I18n:
-      fields: [name, description ]
+      fields:                          [name, description, meta_description ]
       actAs:
-        SluggableExt: { fields: [name], uniqueBy: [lang, name] }    
+        SluggableExt:                  { fields: [name], uniqueBy: [lang, name] }    
   columns:
     id:                                { type: integer  , length: 20 , primary: true    , autoincrement: true                                                  }
     rank:                              { type: integer  , length: 20                                                                                           }
     name:                              { type: string   , length: 200                   , notnull: true                                                        } 
     description:                       { type: string   , length: 5000                  , notnull: true                                                        }
+    meta_description:                  { type: string   , length: 500                   , notnull: false                                                       }
     image:                             { type: string   , length: 200                   , notnull: false                                                       }
     url:                               { type: string   , length: 255                                                                                          }
     active:                            { type: string   , length: 1  , fixed: true      , notnull: true , default: 0                                           }

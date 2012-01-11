@@ -451,3 +451,44 @@ footer {
 			}
 
 /*==========================================*/
+
+
+/*
+ * Button Styles
+ */
+ 
+ #view-more a {
+ color: #FFFFFF;
+ }
+ #view-more {
+    background-repeat: no-repeat;
+    
+    font-family: Tahoma,Geneva,Verdana,sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    height: 61px;
+    margin-left: 980px;
+    margin-top: 82px;
+    position: absolute;
+    text-align: center;
+    width: 236px;
+    z-index: 2147483647;
+    display: block;
+    line-height: 57px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #333333;    
+}
+
+
+#arrow {
+    background-image: url("/images/frontend/arrows.png");
+    background-position: 0 0;
+    height: 369px;
+    left: 50%;
+    margin-left: 470px;
+    top: 117px;
+    width: 178px;
+    z-index: 2147483647;
+    display: block;
+    position: absolute;
+}

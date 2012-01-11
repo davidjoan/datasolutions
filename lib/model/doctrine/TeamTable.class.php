@@ -43,14 +43,12 @@ class TeamTable extends DoctrineTable
     	return $dato['MAX']+1;
     }
     
-    public function findOneBySlug($slug)
-    {
-    	$q = $this->createQuery('a')
-    	->leftJoin('a.Translation t')
-    	->andWhere('t.lang = ?', 'es')
-    	->andWhere('t.slug = ?', $slug);
-    	return $q->fetchOne();
-    }
+  public function findOneBySlug($slug)
+  {
+    $q = $this->createQuery('a')
+      ->addWhere('a.id = ?', $slug);
+  return $q->fetchOne();
+  }
     
     
     public function getPathDir()

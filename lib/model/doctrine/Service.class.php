@@ -33,6 +33,10 @@ class Service extends BaseService
 		$this->setRank($rank);
 	}
 	
+	public function getSlug()
+	{
+		return $this->_get('id');
+	}	
 	
 	public function getFormattedDatetime($format = 'D')
 	{

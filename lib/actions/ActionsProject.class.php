@@ -16,5 +16,7 @@ abstract class ActionsProject extends sfActionsExt
     LOG_NAMESPACE                      = 'Log',
     NEWS_NAMESPACE                     = 'News',  
     APPLICATION_NAMESPACE              = 'Application',
+    TEAM_NAMESPACE                     = 'Team',
+    SERVICE_NAMESPACE                  = 'Service',
     USER_NAMESPACE                     = 'User';
 }

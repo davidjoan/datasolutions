@@ -25,6 +25,20 @@
                 ))
           ?>
           <?php include_partial('General/tab', array
+          (
+                            'title'       => 'Equipo', 
+                            'uri'         => '@team_list',
+                            'image'       => 'backend/menu/inventory.gif',
+          ))
+          ?>
+          <?php include_partial('General/tab', array
+          (
+                                      'title'       => 'Servicios', 
+                                      'uri'         => '@service_list',
+                                      'image'       => 'backend/menu/inventory.gif',
+          ))
+          ?>                
+          <?php include_partial('General/tab', array
                 (
                   'title'       => 'Usuarios', 
                   'uri'         => '@user_list',

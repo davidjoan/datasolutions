@@ -1,6 +1,6 @@
 <aside>
   <div class="g-plusone" data-size="small" data-annotation="inline" data-href="http://datasolutions.pe"></div>
-  <div class="fb-like" data-href="http://datasolutions.pe" data-send="false" data-width="300" data-show-faces="true"></div>
+  <div class="fb-like" data-href="http://datasolutions.pe" data-send="false" data-width="200" data-show-faces="false"></div>
   <?php include_component('General', 'news') ?>
 </aside>
 

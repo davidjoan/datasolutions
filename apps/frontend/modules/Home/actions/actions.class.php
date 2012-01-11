@@ -13,31 +13,74 @@ class HomeActions extends ActionsProject
 
   public function executeIndex(sfWebRequest $request)
   {
-    $this->response->setTitle('DATA Solutions | Inicio');
+    if($this->getUser()->getCulture() == 'es')
+  	{
+  		$this->getResponse()->setTitle('DATA Solutions | Inicio');
+  		$this->getResponse()->addMeta('description', 'Data solutions es una empresa peruana dedicado al desarrollo de aplicaciones WEB 2.0');
+  	}
+  	else
+  	{
+  		$this->getResponse()->setTitle('DATA Solutions | Welcome');
+  		$this->getResponse()->addMeta('description', 'Data Solutions is a Peruvian company dedicated to developing Web 2.0 applications');
+  	}
     Doctrine::getTable('Visit')->createAndSave($request->getPathInfoArray());
   }
 
   public function executeNosotros(sfWebRequest $request)
   {
-      $this->getResponse()->setTitle('DATA Solutions | Nosotros');
-      $this->getResponse()->addMeta('description', 'DATA solutions no s贸lo es una de las mejores empresa de desarrollo web a nivel mundial, te ofrecemos soluciones 煤nicas, creativas y modernas para todo lo que quieres expresar.');
+  	
+  	if($this->getUser()->getCulture() == 'es')
+  	{
+  		$this->getResponse()->setTitle('DATA Solutions | Nosotros');
+  		$this->getResponse()->addMeta('description', 'DATA solutions no s贸lo es una de las mejores empresa de desarrollo web a nivel mundial, te ofrecemos soluciones 煤nicas, creativas y modernas para todo lo que quieres expresar.');  		
+  	}
+  	else
+  	{
+  		$this->getResponse()->setTitle('DATA Solutions | About Us');
+  		$this->getResponse()->addMeta('description', 'Data Solutions Not only is it one of the best web development company worldwide, we offer solutions to second techniques, creative and modern for all what you mean.');
+  	}
+
+    $this->team = Doctrine::getTable('Team')->findTeam();
+      
   }
 
   public function executeServicios(sfWebRequest $request)
   {
-      $this->response->setTitle('DATA Solutions | Servicios');
-      $this->getResponse()->addMeta('description', 'El desarrollo del internet y la interacci贸n de los usuarios con el entorno web a impulsado a la creaci贸n del sistema web 2.0 por su economicidad, por su configurabilidad y adem谩s porque el contenido esta disponible desde cualquier m谩quina local o del mundo.');
+  	if($this->getUser()->getCulture() == 'es')
+  	{
+  	  $this->getResponse()->setTitle('DATA Solutions | Servicios');
+  	  $this->getResponse()->addMeta('description', 'El desarrollo del internet y la interacci髇 de los usuarios con el entorno web a impulsado a la creaci髇 del sistema web 2.0 por su economicidad, por su configurabilidad y adem醩 porque el contenido esta disponible desde cualquier m醧uina local o del mundo.');
+  	}
+  	else
+  	{
+  	  $this->getResponse()->setTitle('DATA Solutions | Services');
+  	  $this->getResponse()->addMeta('description', 'The development of the Internet and how users interact with the web environment prompted the establishment of web 2.0 for its cheapness, for its configurability and also because the content is available from any local machine or the world.');
+  	}
+  	
+  	$this->services = Doctrine::getTable('Service')->findServices();
   }  
   
   public function executeProyectos(sfWebRequest $request)
   {
-    $title = 'DATA Solutions | Proyectos';
-    $description = 'Estos son los ultimos proyectos desarrollados por data solutions seleccione para conocer mas acerca de cada uno de nuestras soluciones.';
+  	
+  	if($this->getUser()->getCulture() == 'es')
+  	{
+  		$title = 'DATA Solutions | Proyectos';
+  		$description = 'Estos son los ultimos proyectos desarrollados por data solutions seleccione para conocer mas acerca de cada uno de nuestras soluciones.';
+  	}
+  	else
+  	{
+  		$title = 'DATA Solutions | Projects';
+  		$description = 'These are the latest developments select Data Solutions to learn more about each of our solutions.';  		
+
+  	}  	
+    
     $this->slug = $request->getParameter('slug');
     if($this->slug <> '')
     {
       $this->application = Doctrine::getTable('Application')->findOneBySlug($this->slug);
       $title .=' | '.$this->application->getName();
+      $description = $this->application->getMetaDescription();
       $this->forward404Unless($this->application);
     }
     $this->getResponse()->setTitle($title);

@@ -57,7 +57,7 @@
 
   <div class="main-box">
     <div class="container">
-      <div class="inside">
+      <div class="inside" id="inside">
         <div class="wrapper">
           <?php echo $sf_content ?>
         </div>

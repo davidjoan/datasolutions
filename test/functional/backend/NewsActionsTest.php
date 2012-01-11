@@ -2,18 +2,11 @@
 
 include(dirname(__FILE__).'/../../bootstrap/functional.php');
 
-$browser = new sfTestFunctional(new sfBrowser());
+$browser = new sfTestFunctionalExt(new sfBrowser());
 
-$browser->
-  get('/News/index')->
-
-  with('request')->begin()->
-    isParameter('module', 'News')->
-    isParameter('action', 'index')->
-  end()->
-
-  with('response')->begin()->
-    isStatusCode(200)->
-    checkElement('body', '!/This is a temporary page/')->
-  end()
-;
+$browser->get('/News/list')
+        ->checkAction('News', 'list', 200)
+        ->get('/News/edit')
+        ->checkAction('News', 'edit', 200)
+        ->get('/News/delete')
+        ->checkAction('News', 'delete', 200);

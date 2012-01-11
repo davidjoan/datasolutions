@@ -1,9 +1,9 @@
 <?php slot('title') ?>
-  Noticias
+  Aplicaciones
 <?php end_slot() ?>
 
 <?php slot('subtitle') ?>
-  Noticia: <?php echo $form->getObject()->getName() ?>
+  Aplicación: <?php echo $form->getObject()->getName() ?>
 <?php end_slot() ?>
 
 <?php include_component('Crud', 'show', array('form' => $form)) ?>

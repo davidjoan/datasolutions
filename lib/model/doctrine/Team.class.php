@@ -22,11 +22,16 @@ class Team extends BaseTeam
 	
 	}
 	
-/*	public function getName()
+	public function getSlug()
 	{
-		return $this->Translation[sfContext::getInstance()->getUser()->getCulture()]->name;
+		return $this->_get('id');
 	}
-	*/
+	
+	public function getDescription()
+	{
+		return $this->Translation[sfContext::getInstance()->getUser()->getCulture()]->description;
+	}
+	
 	public function setNewRank()
 	{
 		$rank = $this->getTable()->getNewRank();
