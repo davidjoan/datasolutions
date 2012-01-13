@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
 <xliff version="1.0">
-  <file source-language="EN" target-language="en" datatype="plaintext" original="messages" date="2012-01-11T20:03:30Z" product-name="messages">
+  <file source-language="EN" target-language="en" datatype="plaintext" original="messages" date="2012-01-13T06:30:38Z" product-name="messages">
     <header/>
     <body>
       <trans-unit id="1">
@@ -273,6 +273,38 @@ Every day more businesses rely on Data Solutions with a Web presence, profession
       <trans-unit id="65">
         <source>Ver Mas...</source>
         <target>View more</target>
+      </trans-unit>
+      <trans-unit id="66">
+        <source>Estos son los ultimos proyectos desarrollados por data solutions seleccione para conocer mas acerca de cada uno de nuestras soluciones.</source>
+        <target>These are the latest developments of our company select to learn more about each of our solutions.</target>
+      </trans-unit>
+      <trans-unit id="67">
+        <source>Ademas a lo largo de todos estos años hemos desarrollados múltiples proyectos resolviendo problemas en diversos sectores. Las características que más destacan nuestros clientes de las aplicaciones que hemos desarrollado son:</source>
+        <target>Also over the years we have developed multiple projects to solve problems in various sectors. The most noteworthy features of the applications our customers we have developed are:</target>
+      </trans-unit>
+      <trans-unit id="68">
+        <source>Integración con otras aplicaciones, como servicios web y redes sociales.</source>
+        <target>Integration with other applications such as web services and social networks.</target>
+      </trans-unit>
+      <trans-unit id="69">
+        <source>Aplicaciones intuitivas.</source>
+        <target>Intuitive applications.</target>
+      </trans-unit>
+      <trans-unit id="70">
+        <source>Cortos tiempos de respuesta.</source>
+        <target>Short response times.</target>
+      </trans-unit>
+      <trans-unit id="71">
+        <source>Accesibilidad.</source>
+        <target>Accessibility.</target>
+      </trans-unit>
+      <trans-unit id="72">
+        <source>Bajo nivel de incidencias tras la implantación.</source>
+        <target>Low incidence of implantation.</target>
+      </trans-unit>
+      <trans-unit id="73">
+        <source>Deja tu comentario</source>
+        <target>Leave a Comment</target>
       </trans-unit>
     </body>
   </file>

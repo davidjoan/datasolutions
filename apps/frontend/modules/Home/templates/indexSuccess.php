@@ -1,6 +1,8 @@
 <aside>
   <div class="g-plusone" data-size="small" data-annotation="inline" data-href="http://datasolutions.pe"></div>
   <div class="fb-like" data-href="http://datasolutions.pe" data-send="false" data-width="200" data-show-faces="false"></div>
+  <a href="https://twitter.com/DATASolutionspe" class="twitter-follow-button" data-show-count="false" data-lang="es">Segui @DATASolutionspe</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   <?php include_component('General', 'news') ?>
 </aside>
 

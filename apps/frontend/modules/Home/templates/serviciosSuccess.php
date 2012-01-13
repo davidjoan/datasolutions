@@ -14,7 +14,7 @@
     <p><?php echo __('DATA solutions te ofreca una gran variedad de soluciones informaticas. Entre las principales tecnologias que estamos especializados.'); ?></p>
     <?php foreach($services as $service): ?>
       <?php if($service->getUrl() <> ''): ?>
-         <h2><?php echo link_to($service->getName(), $service->getUrl(), array('target' => 'BLANK')); ?></h2>
+         <h2><?php echo link_to($service->getName(), $service->getUrl(), array('target' => '_BLANK')); ?></h2>
       <?php else:?>
         <h2><?php echo $service->getName(); ?></h2>
       <?php endif; ?>

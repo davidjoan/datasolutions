@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
 <xliff version="1.0">
-  <file source-language="EN" target-language="es" datatype="plaintext" original="messages" date="2012-01-11T20:03:38Z" product-name="messages">
+  <file source-language="EN" target-language="es" datatype="plaintext" original="messages" date="2012-01-13T06:30:49Z" product-name="messages">
     <header/>
     <body>
       <trans-unit id="1">
@@ -267,10 +267,42 @@ Cada dia más negocios confían en DATA solutions con su presencia en la web, pr
       </trans-unit>
       <trans-unit id="65">
         <source>You must proceed to the login page and enter your user name and password.</source>
-        <target/>
+        <target>Usted debe ir a la página de inicio de sesión e introduzca su nombre de usuario y contraseña.</target>
       </trans-unit>
       <trans-unit id="66">
         <source>Ver Mas...</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="67">
+        <source>Estos son los ultimos proyectos desarrollados por data solutions seleccione para conocer mas acerca de cada uno de nuestras soluciones.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="68">
+        <source>Ademas a lo largo de todos estos años hemos desarrollados múltiples proyectos resolviendo problemas en diversos sectores. Las características que más destacan nuestros clientes de las aplicaciones que hemos desarrollado son:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="69">
+        <source>Integración con otras aplicaciones, como servicios web y redes sociales.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="70">
+        <source>Aplicaciones intuitivas.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="71">
+        <source>Cortos tiempos de respuesta.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="72">
+        <source>Accesibilidad.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="73">
+        <source>Bajo nivel de incidencias tras la implantación.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="74">
+        <source>Deja tu comentario</source>
         <target/>
       </trans-unit>
     </body>

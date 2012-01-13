@@ -3,7 +3,7 @@ $(document).ready(function() {
 		 shape: 'figure8',
 		 minOpacity: 1,
 		 autoplay: true,
-		 autoplayDuration: 2000,
+		 autoplayDuration: 2400,
 	     autoplayPauseOnHover: true
 		 
 	});

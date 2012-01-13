@@ -467,8 +467,8 @@ footer {
     font-size: 17px;
     font-weight: 900;
     height: 61px;
-    margin-left: 980px;
-    margin-top: 82px;
+    margin-left: 960px;
+    margin-top: 80px;
     position: absolute;
     text-align: center;
     width: 236px;
@@ -485,7 +485,7 @@ footer {
     background-position: 0 0;
     height: 369px;
     left: 50%;
-    margin-left: 470px;
+    margin-left: 430px;
     top: 117px;
     width: 178px;
     z-index: 2147483647;

@@ -3,33 +3,37 @@ homepage:
   param:           { module: Home, action: index}
 
 nosotros:
-  url:             /:sf_culture/nosotros
+  url:             /:sf_culture/nosotros/
   param:           { module: Home, action: nosotros}
+  requirements:    { sf_culture: (?:en|es) }
 
 servicios:
-  url:             /:sf_culture/servicios
+  url:             /:sf_culture/servicios/
   param:           { module: Home, action: servicios}
+  requirements:    { sf_culture: (?:en|es) }
 
 proyectos:
   url:             /:sf_culture/proyectos/:slug
   param:           { module: Home, action: proyectos, slug: ''}
-  requirements:    { slug: \w+ }
+  requirements:    { slug: \w+, sf_culture: (?:en|es) }
 
 contactenos:
-  url:             /:sf_culture/contactenos
+  url:             /:sf_culture/contactenos/
   param:           { module: Home, action: contactenos}
+  requirements:    { sf_culture: (?:en|es) }
 
 sitemap:
-  url:             /:sf_culture/sitemap
-  param:           { module: Home, action: sitemap}
+  url:             /:sf_culture/sitemap/
+  param:           { module: Home, action: sitemap }
+  requirements:    { sf_culture: (?:en|es) }
 
 image:
-  url:             /image
+  url:             /image/
   param:           { module: Home, action: image}
   
 change_language:
-  url:             /change/language
+  url:             /change/language/
   param:           { module: Home, action: changeLanguage }
   
-default:
-  url:             /:module/:action/*
+#default:
+#  url:             /:module/:action/*
