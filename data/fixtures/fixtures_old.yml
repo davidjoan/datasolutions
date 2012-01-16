@@ -7,11 +7,11 @@ User:
     url: http://datasolutions.pe
     twitter_username: david.joan
     active: '1'
-#Visit:
-#  Visit_1:
-#    remote_address: 190.43.32.112
-#    remote_port: '10992'
-#    http_user_agent: 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.1.9) Gecko/20100315 Firefox/3.5.9'
-#    datetime: '2010-05-23 13:20:00'
-#    created_at: '2010-05-23 13:20:00'
-#    updated_at: '2010-05-23 13:20:00'
+Visit:
+  Visit_1:
+    remote_address: 190.43.32.112
+    remote_port: '10992'
+    http_user_agent: 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.1.9) Gecko/20100315 Firefox/3.5.9'
+    datetime: '2010-05-23 13:20:00'
+    created_at: '2010-05-23 13:20:00'
+    updated_at: '2010-05-23 13:20:00'

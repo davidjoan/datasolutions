@@ -15,6 +15,7 @@ class ApplicationForm extends BaseApplicationForm
   {
     $this->labels = array
     (
+      'name'        => 'Nombre',	
       'image'       => 'Imagen',
       'url'         => 'Url',
       'active'      => 'Activo'
@@ -27,6 +28,7 @@ class ApplicationForm extends BaseApplicationForm
      $this->setWidgets(array
     (
       'id'                   => new sfWidgetFormInputHidden(),
+      'name'                 => new sfWidgetFormInputText(array(), array('size' => 60)),	  
       'image'                => new sfWidgetFormInputFileEditable
                                 (
                                   array
@@ -62,9 +64,11 @@ class ApplicationForm extends BaseApplicationForm
     $this->types = array
     (
       'id'           => '=',
+      'name'         => 'text',	  
       'image'        => 'file',
       'url'          => 'url',
       'active'       => array('combo', array('choices' => array_keys($this->getTable()->getStatuss()))),
+      'slug'         => '-',	  
       'created_at'   => '-',
       'updated_at'   => '-'
     );

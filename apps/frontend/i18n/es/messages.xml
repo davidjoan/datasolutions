@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
 <xliff version="1.0">
-  <file source-language="EN" target-language="es" datatype="plaintext" original="messages" date="2012-01-13T06:30:49Z" product-name="messages">
+  <file source-language="EN" target-language="es" datatype="plaintext" original="messages" date="2012-01-14T19:33:34Z" product-name="messages">
     <header/>
     <body>
       <trans-unit id="1">
@@ -305,6 +305,14 @@ Cada dia más negocios confían en DATA solutions con su presencia en la web, pr
         <source>Deja tu comentario</source>
         <target/>
       </trans-unit>
+      <trans-unit id="75">
+        <source>Back to Top</source>
+        <target>Ir al Inicio</target>
+      </trans-unit>
+      <trans-unit id="76">
+        <source>or</source>
+        <target>ó</target>
+      </trans-unit>      
     </body>
   </file>
 </xliff>

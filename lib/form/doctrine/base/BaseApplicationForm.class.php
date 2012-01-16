@@ -17,22 +17,30 @@ abstract class BaseApplicationForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id'         => new sfWidgetFormInputHidden(),
       'rank'       => new sfWidgetFormInputText(),
+      'name'       => new sfWidgetFormInputText(),
       'image'      => new sfWidgetFormInputText(),
       'url'        => new sfWidgetFormInputText(),
       'active'     => new sfWidgetFormInputText(),
       'created_at' => new sfWidgetFormDateTime(),
       'updated_at' => new sfWidgetFormDateTime(),
+      'slug'       => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
       'id'         => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'rank'       => new sfValidatorInteger(array('required' => false)),
+      'name'       => new sfValidatorString(array('max_length' => 200)),
       'image'      => new sfValidatorString(array('max_length' => 200, 'required' => false)),
       'url'        => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'active'     => new sfValidatorString(array('max_length' => 1, 'required' => false)),
       'created_at' => new sfValidatorDateTime(),
       'updated_at' => new sfValidatorDateTime(),
+      'slug'       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
     ));
+
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorDoctrineUnique(array('model' => 'Application', 'column' => array('slug')))
+    );
 
     $this->widgetSchema->setNameFormat('application[%s]');
 

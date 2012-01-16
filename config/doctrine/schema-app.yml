@@ -2,11 +2,9 @@ Application:
   tableName:                           t_application
   actAs:
     Timestampable:
+    SluggableExt:                      { fields: [name] }    
     Thumbnailable:                     { fields: [ image ] }
-    I18n:
-      fields:                          [name, description, meta_description ]
-      actAs:
-        SluggableExt:                  { fields: [name], uniqueBy: [lang, name] }    
+    I18n:                              { fields: [description, meta_description ] }
   columns:
     id:                                { type: integer  , length: 20 , primary: true    , autoincrement: true                                                  }
     rank:                              { type: integer  , length: 20                                                                                           }
@@ -18,6 +16,7 @@ Application:
     active:                            { type: string   , length: 1  , fixed: true      , notnull: true , default: 0                                           }
   indexes:
     i_active:                          { fields: [ active ]                                                                                                    }
+    i_name:                            { fields: [ name ]                                                                                                      }
     i_url:                             { fields: [ url ]                                                                                                       }
   options:
     symfony:                           { filter: false, form: true }

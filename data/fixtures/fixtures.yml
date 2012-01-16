@@ -1,47 +1,3 @@
-Application:
-  Application_1:
-    rank: '1'
-    Translation:
-      en:
-        name: CUSA
-        description: '<p>Since its founding in October 1964 by Mr. Manuel Ugarte Almonte, CUSA has been the important link between chemical suppliers around the world and major industrial companies in Peru. <br /> <Br /> Managing the option of selling both direct and local distribution, CUSA, focuses its strategy on providing its customers a good service both technically and commercially focused logistics as follows: <br /> <br /> Permanent training of our staff, participating in meetings and conferences both nationally and internationally. <br /> constant provider technical visits to our customers. <br /> conferences for technical staff of our clients. <br /> <br /> given the technological advances that gives each moment, CUSA, is committed to continue this development to meet the quality parameters that require both your suppliers and your customers.</p>'
-        meta_description: 'a,b,c'
-      es:
-        name: CUSA
-        description: '<p>Desde su fundaci&oacute;n en Octubre de 1964 por el Sr. Manuel Ugarte Almonte, CUSA, ha servido de nexo entre importantes proveedores de productos qu&iacute;micos en todo el mundo y las principales empresas industriales del Per&uacute;.<br /><br />Manejando tanto la opci&oacute;n de venta directa como la de distribuci&oacute;n local, CUSA, centra su estrategia en brindar a sus clientes un servicio adecuado tanto a nivel t&eacute;cnico log&iacute;stico como comercial enfocado de la siguiente forma:<br /><br />&nbsp;&nbsp;&nbsp; Permanente capacitaci&oacute;n de nuestro personal, participando en congresos y conferencias tanto a nivel nacional como internacional.<br />&nbsp;&nbsp;&nbsp; Visitas t&eacute;cnicas constantes del proveedor a nuestros clientes.<br />&nbsp;&nbsp;&nbsp; Conferencias para el personal t&eacute;cnico de nuestros clientes.<br /><br />Teniendo en cuenta el avance tecnol&oacute;gico que se da a cada momento, CUSA, mantiene el compromiso de seguir dicho avance para cumplir con los par&aacute;metros de calidad que exigen tanto sus proveedores como sus clientes.</p>'
-        meta_description: 'a,b,c'
-    image: 8d4daa7c0d8b8bf7518d931b781764385a4c003e.png
-    url: 'http://www.cusa-chem.com'
-    active: '1'
-  Application_2:
-    rank: '3'
-    Translation:
-      en:    
-        name: 'Peru TV Online'
-        description: '<p>Peruvian television for the whole world.</p>'
-        meta_description: 'a,b,c'
-      es:       
-        name: 'Peru TV Online'
-        description: '<p>Television peruana para el mundo entero.</p>'
-        meta_description: 'a,b,c'
-    image: d629b4088363e4605e9666b0664b7d7cbfd59688.png
-    url: 'http://www.perutvonline.com'
-    active: '1'
-  Application_3:
-    rank: '2'
-    Translation:
-      en:    
-        name: 'Saint Malo Reservation System'
-        description: '<p>Room Reservation System of the retirement home of Saint Malo in Colorado.</p>'
-        meta_description: 'a,b,c'
-      es:    
-        name: 'Sistema de Reservaciones Saint Malo'
-        description: '<p>Sistema de reserva de habitaciones de la casa de retiro de saint Malo en Colorado.</p>'
-        meta_description: 'a,b,c'        
-    image: a58c227ebee2e29b245320305a09168315d224a9.png
-    url: 'http://saintmalo.scholaonline.com'
-    active: '1'
-    
 News:
   News_1:
     Translation:
@@ -52,21 +8,41 @@ News:
         title: 'Bienvenidos a DataSolutions'
         description: '<p>les damos la bienvenida a todos los ustedes, y esperamos satisfacer sus requerimientos, y adsolver todas sus dudas.</p>'        
     active: '1' 
-    
+
 Service:
   Service_1:
-    rank: '1'
+    rank: 1
+    image: null
+    url: 'http://www.symfony-project.com'
     Translation:
       en:
-        name: Symfony
-        description: '<p>symfony english</p>'
+        name: 'Symfony Framework'
+        description: "<p>Symfony is a framework for professional development Advanced PHP applications. The intelligence of the code allows a rapid and robust without sacrificing the highest level of control. Symfony project is suitable for large-scale measurement need to constantly develop and accurately. Symfony's success has been clearly demonstrated and day Today companies like Yahoo! are relying on this technology for development applications with more than 200 million users.</p>\r\n<p>Symfony is built from the ground up to leverage PHP 5 full potential of PHP. Its source code is constantly renewed and ensures long term support for their stable releases. <!-- p--></p>\r\n<p><img src=\"../../../images/frontend/symfony-map.png\" alt=\"\" /></p>\r\n<!-- figure-->\r\n<p>As source code evolves and is developed is analysis and testing becomes more than 9000 unit and functional test ensuring efficiency and safety. <!-- p--></p>\r\n<p>Symfony includes protection against attacks Scripts malicious XSS (Cross-site scripting) and CSRF requests (Cross-site request forgery). <!-- p--></p>\r\n<p>great documentation and support providing Symfony and constant updated in many languages ??(over 40) make a Symfony sure value and a future technology too keep in mind. <!-- p--></p>"
       es:
-        name: Symfony
-        description: '<p>Symfony spanish.</p>'
-    image: 8d4daa7c0d8b8bf7518d931b781764385a4c003e.png
-    url: 'http://symfony.com'
-    active: '1'
-
+        name: 'Framework Symfony'
+        description: "<p>Symfony es un framework para el desarrollo profesional de aplicaciones avanzadas de PHP. La inteligencia de su c&oacute;digo permite un desarrollo r&aacute;pido y robusto sin renunciar a un m&aacute;ximo nivel de control. Symfony est&aacute; indicado para proyectos a medida de gran envergadura que necesiten una evoluci&oacute;n constante y precisa. El &eacute;xito de Symfony ha quedado claramente demostrado y a d&iacute;a de hoy empresas como Yahoo! conf&iacute;an en esta tecnolog&iacute;a para el desarrollo de aplicaciones con m&aacute;s de 200 millones de usuarios.</p>\r\n<p>Symfony  est&aacute; creado desde el principio para PHP 5 para aprovechar todo el potencial de PHP. Su c&oacute;digo fuente se renueva constantemente y se garantiza el soporte a largo t&eacute;rmino para sus  versiones estables.</p>\r\n<p><img src=\"../../../images/frontend/symfony-map.png\" alt=\"\" /></p>\r\n<p>A medida que su c&oacute;digo fuente evoluciona y es desarrollado se analiza y prueba haci&eacute;ndose m&aacute;s de 9000 test unitarios y funcionales garantizando as&iacute; su eficiencia y seguridad.</p>\r\n<p>Symfony  incluye la protecci&oacute;n contra ataques con Scripts maliciosos del tipo XSS (Cross-site scripting) y peticiones CSRF (Cross-site request forgery).</p>\r\n<p>La gran documentaci&oacute;n y soporte que ofrece Symfony y su constante actualizaci&oacute;n de en multitud de idiomas (m&aacute;s de 40) hacen de Symfony  un valor seguro y una tecnolog&iacute;a de futuro muy a tener en cuenta.</p>"
+  Service_2:
+    rank: 2
+    image: null
+    url: 'http://www.doctrine-project.org/'
+    Translation:
+      en:
+        name: 'Doctrine ORM'
+        description: "<p>According to official documentation, Doctrine ORM for PHP is 5.2.3 and later. Besides all the benefits it provides an ORM, one of its strengths is its language DQL (Doctrine Query Language) inspired by Hibernate HQL. <!-- P--></p>\r\n<p><img src=\"../../images/frontend/orm.png\" alt=\"\" /></p>\r\n<!-- figure-->\r\n<p>When we work with, we need to inform your internal engine which is the model of our application, we can reverse engineer it from our existing database, or if we start the application from 0, create the model in the syntax Doctrine offers us specific and then generate the entire database.</p>"
+      es:
+        name: 'Doctrine ORM'
+        description: "<p>Seg&uacute;n la documentaci&oacute;n oficial, Doctrine es un ORM para PHP 5.2.3 y posterior. Adem&aacute;s de todas las ventajas que conlleva un ORM, uno de sus puntos fuertes es su lenguaje DQL (Doctrine Query Language) inspirado en el HQL de Hibernate.</p>\r\n<p><img src=\"../../images/frontend/orm.png\" alt=\"\" /></p>\r\n<p>Cuando trabajamos con Doctrine, necesitamos informar a su motor interno de cual es el modelo de nuestra aplicaci&oacute;n, para ello podemos hacer ingenier&iacute;a inversa de nuestra base de datos existente, o si empezamos la aplicaci&oacute;n desde 0, crear el modelo en la sintaxis espec&iacute;fica que nos propone Doctrine y luego generar toda la base de datos.</p>"
+  Service_3:
+    rank: 3
+    image: null
+    url: 'http://www.oracle.com'
+    Translation:
+      en:
+        name: 'Oracle Database'
+        description: '<p>We offer services of install, configure, performance, migrations and prepare hight disponibulity environment  using the full oracle technology. <img src="../../images/frontend/oracle.png" alt="" /></p>'
+      es:
+        name: 'Base de datos Oracle'
+        description: "<p>Brindamos los servicios de instalaci&oacute;n, configuraci&oacute;n, afinamiento, migraci&oacute;n y preparaci&oacute;n de ambientes de alta disponibilidad usando la tecnolog&iacute;a Oracle.</p>\r\n<p><img src=\"../../images/frontend/oracle.png\" alt=\"\" /></p>\r\n<p>&nbsp;</p>"
 
 Team:
   Team_1:
@@ -75,7 +51,7 @@ Team:
         description: '<p><span id="result_box" lang="en"><span class="hps">Develop, document,</span> <span class="hps">Project Manager,</span> <span class="hps">Web</span> <span class="hps">Designer</span><span>.</span> <span class="hps">David</span> <span class="hps">is a</span> <span class="hps">software</span> <span class="hps">developer</span> <span class="hps">currently living in</span> <span class="hps">Lima</span><span>, Peru.</span> <span class="hps">Company founder</span> <span class="hps">Data Solutions</span> <span class="hps">has been</span> <span class="hps">involved in one way</span> <span class="hps">or another since</span> <span class="hps">then.</span> <span class="hps">David</span> <span class="hps">currently</span> <span class="hps">works full time</span> <span class="hps">as a software developer</span><span>, using</span> <span class="hps">as a platform</span> <span class="hps">symfony,</span> <span class="hps">doctrine</span> <span class="hps">and</span> <span class="hps">oracle.</span></span></p>'
       es:
         description: '<p>Desarrollador, Documentador, Jefe de Proyectos, Dise&ntilde;ador Web. David es un desarrollador de software que actualmente vive en Lima, Per&uacute;. Fundador de la empresa DATA solutions, ha estado involucrado de una manera u otra desde entonces. David actualmente trabaja a tiempo completo como desarrollador de software, utilizando como plataforma symfony, doctrine y oracle.</p>'
-    rank: '1'
+    rank: 1
     name: 'David Joan Tataje Mendoza'
     image: caba32b12dde15654e8e9481badef9f1a9afb672.png
     url: 'http://blog.datasolutions.pe'

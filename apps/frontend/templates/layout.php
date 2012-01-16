@@ -36,6 +36,7 @@
 </script>  
   </head>
   <body>
+  <a name="top"></a>
   <!-- facebook -->
   <div id="fb-root"></div>
 <script>(function(d, s, id) {

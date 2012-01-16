@@ -29,11 +29,6 @@ class Application extends BaseApplication
   	return Stringkit::fixFilename($file->getOriginalName()).'_'.rand(11111, 99999).$file->getOriginalExtension();
   }  
   
-  public function getName()
-  {
-  	return $this->Translation[sfContext::getInstance()->getUser()->getCulture()]->name;
-  }
-  
   public function getDescription()
   {
   	return $this->Translation[sfContext::getInstance()->getUser()->getCulture()]->description;
@@ -49,12 +44,6 @@ class Application extends BaseApplication
   	$rank = $this->getTable()->getNewRank();
   	$this->setRank($rank);
   }
-  
-  public function getSlug()
-  {
-  	return $this->_get('id');
-  }
-  
     
   public function getFormattedDatetime($format = 'D')
   {

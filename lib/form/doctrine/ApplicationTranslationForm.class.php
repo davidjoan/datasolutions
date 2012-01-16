@@ -14,7 +14,6 @@ class ApplicationTranslationForm extends BaseApplicationTranslationForm
   {
     $this->labels = array
     (
-      'name'        => 'Nombre',
       'description' => 'Descripci&oacute;n',
       'meta_description' => 'Meta Descripci&oacute;n',
     );
@@ -25,7 +24,6 @@ class ApplicationTranslationForm extends BaseApplicationTranslationForm
      $this->setWidgets(array
     (
       'id'                   => new sfWidgetFormInputHidden(),
-      'name'                 => new sfWidgetFormInputText(array(), array('size' => 60)),
       'description'          => new sfWidgetFormTextareaTinyMCE(array
                                 (
                                   'width'            => 450,
@@ -40,10 +38,8 @@ class ApplicationTranslationForm extends BaseApplicationTranslationForm
       'id'           => '=',
       'description'  => '=',
       'meta_description' => 'text',
-      'name'         => 'text',
       'created_at'   => '-',
       'updated_at'   => '-',
-      'slug'         => '-',
     );
   }
 }

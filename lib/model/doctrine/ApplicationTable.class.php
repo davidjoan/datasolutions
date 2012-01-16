@@ -46,7 +46,7 @@ class ApplicationTable extends DoctrineTable
   public function findOneBySlug($slug)
   {
     $q = $this->createQuery('a')
-      ->addWhere('a.id = ?', $slug);
+      ->addWhere('a.slug = ?', $slug);
   return $q->fetchOne();
   }
 
